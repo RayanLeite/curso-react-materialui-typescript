@@ -11,7 +11,7 @@ export const AppRoutes = () => {
         path="/pagina-inicial"
         element={
           <Button variant="contained" color="primary" onClick={toggleTheme}>
-            Teste
+            Toggle Theme
           </Button>
         }
       />
