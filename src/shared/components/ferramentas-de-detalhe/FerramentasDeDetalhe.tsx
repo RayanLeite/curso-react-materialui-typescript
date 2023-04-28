@@ -36,16 +36,16 @@ interface IFerramentasDeDetalheProps {
 export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
   textoBotaoNovo = "Novo",
 
-  mostrarBotaoNovo = false,
-  mostrarBotaoVoltar = false,
-  mostrarBotaoApagar = false,
-  mostrarBotaoSalvar = false,
+  mostrarBotaoNovo = true,
+  mostrarBotaoVoltar = true,
+  mostrarBotaoApagar = true,
+  mostrarBotaoSalvar = true,
   mostrarBotaoSalvarEFechar = false,
 
-  mostrarBotaoNovoCarregando = true,
-  mostrarBotaoVoltarCarregando = true,
-  mostrarBotaoApagarCarregando = true,
-  mostrarBotaoSalvarCarregando = true,
+  mostrarBotaoNovoCarregando = false,
+  mostrarBotaoVoltarCarregando = false,
+  mostrarBotaoApagarCarregando = false,
+  mostrarBotaoSalvarCarregando = false,
   mostrarBotaoSalvarEFecharCarregando = false,
 
   aoClicarEmNovo,
