@@ -2,6 +2,7 @@ import { Menu } from "@mui/icons-material";
 import {
   Box,
   IconButton,
+  Theme,
   Typography,
   useMediaQuery,
   useTheme,
@@ -21,8 +22,8 @@ export const LayoutBaseDePagina: React.FC<ILayoutBaseDePaginaProps> = ({
   barraDeFerramentas,
 }) => {
   const theme = useTheme();
-  const smDown = useMediaQuery(theme.breakpoints.down("sm"));
-  const mdDown = useMediaQuery(theme.breakpoints.down("md"));
+  const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
+  const mdDown = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
 
   const { toggleDrawerOpen } = useDrawerContext();
 
